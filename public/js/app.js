@@ -1,5 +1,3 @@
-console.log('client side js');
-
 const weatherForm = document.querySelector('form');
 const serach = document.querySelector('input');
 const msgOne = document.querySelector('#success');
