@@ -9,7 +9,7 @@ weatherForm.addEventListener('submit', event => {
   msgTwo.textContent = '';
 
   const location = serach.value;
-  fetch('http://localhost:3000/weather?address=' + location).then(response => {
+  fetch('/weather?address=' + location).then(response => {
     response.json().then(data => {
       if (data.error) {
         msgTwo.textContent = data.error;
