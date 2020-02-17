@@ -15,7 +15,9 @@ const forcast = (latitude, longtitude, callback) => {
         body.currently.temperature +
         ' degress out. Tere is a ' +
         body.currently.precipProbability +
-        '% chance of rain.'
+        '% chance of rain.' +
+        'the forecast for the week is: ' +
+        body.daily.summary
     );
   });
 };
